@@ -1,0 +1,99 @@
+/* Empty. Add your own CSS if you like */
+
+.home_content{
+  background-image: url("../img/home_img_6.jpg");
+  background-position: center;
+
+}
+.play_game_content {
+
+}
+
+.top_row .cell {
+  border-bottom: 5px solid rgb(218, 125, 2);
+}
+
+.top_row .cell + .cell {
+  border-left: 5px solid rgb(218, 125, 2);
+}
+
+.middle_row {
+  border-bottom: 5px solid rgb(218, 125, 2);
+}
+
+.middle_row .cell + .cell {
+  border-left: 5px solid rgb(218, 125, 2);
+}
+
+.bottom_row .cell + .cell {
+  border-left: 5px solid rgb(218, 125, 2);
+}
+
+.cell {
+  text-align: center;
+  font-size: 45px;
+}
+
+.main_grid {
+  padding: 10%;
+}
+
+.main_grid .row {
+  padding: 0;
+}
+
+.height_inherit {
+  height: inherit;
+}
+
+.play_game_content .scroll {
+  height: 100%;
+}
+
+.three .row_height {
+  height: 15vh;
+}
+.four .row_height {
+  height: 12vh;
+}
+.five .row_height {
+  height: 10vh;
+}
+.three .cell {
+  line-height: 15vh;
+}
+.four .cell {
+  line-height: 12vh;
+}
+.five .cell {
+  line-height: 10vh;
+}
+.padding_zero {
+  padding: 0;
+}
+.margin_top {
+  margin-top: 10px !important;
+}
+.font_bold {
+  font-weight: bold;
+}
+.font_16px {
+  font-size: 16px;
+}
+.odd_click {
+  /*background-color: #2772B2;*/
+  pointer-events: none;
+  /*color: #ffffff;*/
+}
+.even_click {
+  /*background-color: #FF9100;*/
+  pointer-events: none;
+  /*color: #ffffff;*/
+}
+
+.row + .row {
+  margin-top: 0 !important;
+}
+.display_none {
+  display: none !important;
+}

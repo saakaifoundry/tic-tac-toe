@@ -1,0 +1,25 @@
+<ion-view>
+  <ion-content class="home_content">
+
+    <div class="padding-vertical">
+      <img src="img/tictactoe_2.png" alt="" class="full-image" style="height: 280px;"/>
+    </div>
+
+    <ion-slide-box delegate-handle="home_page_slider" show-pager="false">
+      <ion-slide>
+        <div class="padding-horizontal">
+          <button class="button button-positive button-block" ng-click="playGame()">Play</button>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="padding-horizontal">
+          <button class="button button-balanced button-outline button-block font_bold" ng-click="selectGameType(3)">3X3</button>
+          <button class="button button-energized button-outline button-block font_bold" ng-click="selectGameType(4)">4X4</button>
+          <button class="button button-assertive button-outline button-block font_bold" ng-click="selectGameType(5)">5X5</button>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+
+  </ion-content>
+</ion-view>

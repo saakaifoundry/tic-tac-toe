@@ -1,0 +1,68 @@
+<ion-view>
+  <ion-content class="play_game_content">
+
+    <div class="main_grid five">
+      <div class="row row_height top_row">
+        <div class="col-20 cell" ng-click="cellClicked('11')" id="11"></div>
+        <div class="col-20 cell" ng-click="cellClicked('12')" id="12"></div>
+        <div class="col-20 cell" ng-click="cellClicked('13')" id="13"></div>
+        <div class="col-20 cell" ng-click="cellClicked('14')" id="14"></div>
+        <div class="col-20 cell" ng-click="cellClicked('15')" id="15"></div>
+      </div>
+      <div class="row row_height middle_row">
+        <div class="col-20 cell" ng-click="cellClicked('21')" id="21"></div>
+        <div class="col-20 cell" ng-click="cellClicked('22')" id="22"></div>
+        <div class="col-20 cell" ng-click="cellClicked('23')" id="23"></div>
+        <div class="col-20 cell" ng-click="cellClicked('24')" id="24"></div>
+        <div class="col-20 cell" ng-click="cellClicked('25')" id="25"></div>
+      </div>
+      <div class="row row_height middle_row">
+        <div class="col-20 cell" ng-click="cellClicked('31')" id="31"></div>
+        <div class="col-20 cell" ng-click="cellClicked('32')" id="32"></div>
+        <div class="col-20 cell" ng-click="cellClicked('33')" id="33"></div>
+        <div class="col-20 cell" ng-click="cellClicked('34')" id="34"></div>
+        <div class="col-20 cell" ng-click="cellClicked('35')" id="35"></div>
+      </div>
+      <div class="row row_height middle_row">
+        <div class="col-20 cell" ng-click="cellClicked('41')" id="41"></div>
+        <div class="col-20 cell" ng-click="cellClicked('42')" id="42"></div>
+        <div class="col-20 cell" ng-click="cellClicked('43')" id="43"></div>
+        <div class="col-20 cell" ng-click="cellClicked('44')" id="44"></div>
+        <div class="col-20 cell" ng-click="cellClicked('45')" id="45"></div>
+      </div>
+      <div class="row row_height bottom_row">
+        <div class="col-20 cell" ng-click="cellClicked('51')" id="51"></div>
+        <div class="col-20 cell" ng-click="cellClicked('52')" id="52"></div>
+        <div class="col-20 cell" ng-click="cellClicked('53')" id="53"></div>
+        <div class="col-20 cell" ng-click="cellClicked('54')" id="54"></div>
+        <div class="col-20 cell" ng-click="cellClicked('55')" id="55"></div>
+      </div>
+    </div>
+
+    <div class="padding" ng-show="!gameOver">
+      <div class="padding text-center even_click font_bold"
+           ng-class="{'even_click':(player_no === 'First'),'odd_click':(player_no === 'Second')}">
+        <span ng-bind="player_no"></span>
+        <span>player turn - </span>
+        <span ng-if="(player_no === 'First')"><i class="ion-android-close font_16px"></i></span>
+        <span ng-if="(player_no === 'Second')"><i class="ion-android-radio-button-off font_16px"></i></span>
+      </div>
+    </div>
+
+    <div class="padding">
+      <div class="row padding_zero">
+        <div class="col-50">
+          <button class="button button-positive button-outline button-block" ng-click="goToGame()">
+            <i class="icon ion-home"></i> &nbsp; Go Home
+          </button>
+        </div>
+        <div class="col-50">
+          <button class="button button-positive button-outline button-block" ng-click="reStartGame()">
+            Re-Start
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
