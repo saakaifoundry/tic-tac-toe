@@ -19,6 +19,31 @@ angular.module('tic-tac-toe', [
       if (window.StatusBar) {
         StatusBar.styleDefault();
       }
+      function detectDevice() {
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      var device = detectDevice();
+
+      if (device) {
+        //console.log(device.cordova);
+        //alert(device.cordova);
+        //alert(navigator);
+
+        navigator.globalization.getPreferredLanguage(
+          function (language) {
+            console.log('language: ' + language.value + '\n');
+          },
+          function () {
+            console.log('Error getting language\n');
+          }
+        );
+      }
+
     });
   })
 

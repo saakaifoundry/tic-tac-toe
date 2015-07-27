@@ -27,14 +27,17 @@ angular.module('tic-tac-toe.controllers', [])
           $state.go('play-game-3by3');
           GameService.setWinCount(3);
           GameService.setGameArray(GameService.getGameArray3by3);
+          $log.log('3X3 selected');
         } else if (type === 4) {
           $state.go('play-game-4by4');
           GameService.setWinCount(4);
           GameService.setGameArray(GameService.getGameArray4by4);
+          $log.log('4X4 selected');
         } else if (type === 5) {
           $state.go('play-game-5by5');
           GameService.setWinCount(5);
           GameService.setGameArray(GameService.getGameArray5by5);
+          $log.log('5X5 selected');
         }
       };
 
@@ -63,7 +66,6 @@ angular.module('tic-tac-toe.controllers', [])
 
       $scope.cellClicked = function (val) {
         if ($scope.wonGame.status === false) {
-          console.log(winCount)
 
           $scope.clickCount += 1;
 
